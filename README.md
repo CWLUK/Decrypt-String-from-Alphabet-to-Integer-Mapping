@@ -1,2 +1,1 @@
-# Decrypt-String-from-Alphabet-to-Integer-Mapping
-String
+https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping
