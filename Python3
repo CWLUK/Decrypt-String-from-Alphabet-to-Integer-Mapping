@@ -1,0 +1,7 @@
+class Solution:
+    def freqAlphabets(self, s: str) -> str:
+        for i in range(10, 27):
+            s = s.replace(str(i)+"#", chr(i + 96))
+        for j in range(0, 10):
+            s = s.replace(str(j), chr(j + 96))
+        return s
