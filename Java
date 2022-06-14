@@ -1,0 +1,16 @@
+class Solution {
+    public String freqAlphabets(String s) {
+        StringBuilder result = new StringBuilder();
+        int cur = 0;
+        while(cur < s.length()){
+            if (cur < s.length()-2 && s.charAt(cur+2) == '#'){
+                result.append((char)('j' + (s.charAt(cur) - '1')*10 + s.charAt(cur+1) - '0'));
+                cur += 3;
+            } else{
+                result.append((char)('a' + (s.charAt(cur) - '1')));
+                cur++;
+            }
+        }
+        return result.toString();
+    }
+}
